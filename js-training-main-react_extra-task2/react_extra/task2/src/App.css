@@ -1,0 +1,62 @@
+@keyframes reveal {
+  from {
+    color: rosybrown;
+    background-color: rosybrown;
+  } to {
+    color: black;
+    background-color: ghostwhite;
+  }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.menu {
+  
+  padding-top: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 25px;
+
+  padding-top: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 20%;
+  height: 120px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border: solid rgba(0, 0, 0, 0.11) 1px;
+
+  background-color: rosybrown;
+}
+
+.card-revealed {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 20%;
+  height: 120px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border: solid rgba(0, 0, 0, 0.11) 1px;
+
+  animation-name: reveal;
+  animation-duration: 250ms;
+}
